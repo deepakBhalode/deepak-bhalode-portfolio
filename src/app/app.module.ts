@@ -24,7 +24,8 @@ import { BlogComponent } from './components/blog/blog.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+
   ],
   imports: [
     BrowserModule,
