@@ -9,3 +9,39 @@
   margin-top: -40px;
   text-align: center;
 }
+
+.brief-info {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card {
+  color: white;
+  background: linear-gradient(150deg, #0e0e0f, #3a3a3b 150%);
+}
+
+.card-img {
+  height: 30vh;
+}
+
+.blog-title {
+  font-size: 20px;
+}
+
+button {
+  border-radius: 20px;
+  height: 35px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #7DE19A;
+}
+
+button:hover {
+  background: #9af8cc;
+}
+
+a {
+  text-decoration: none;
+  color: #323131;
+}
