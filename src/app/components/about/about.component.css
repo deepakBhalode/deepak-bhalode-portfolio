@@ -5,8 +5,94 @@
 .mat-h1 {
   font-size: 35px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 50px;
+  font-weight: bold;
   margin-top: -40px;
+  margin-bottom: 35px;
   text-align: center;
+}
+
+.title-prefix {
+  font-weight: bold;
+  font-size: 40px;
+  color: #7DE19A;
+}
+
+.section-title {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card {
+  color: white;
+  background: linear-gradient(150deg, #0e0e0f, #3a3a3b 150%);
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-img {
+  height: 30vh;
+}
+
+.blog-title {
+  font-size: 20px;
+}
+
+li {
+ list-style: none;
+}
+
+.verified-icon {
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.brief-info {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.resume-link {
+  color: #7DE19A;
+}
+
+button {
+  border-radius: 20px;
+  height: 40px;
+  width: 130px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #7DE19A;
+}
+
+button:hover {
+  background: #9af8cc;
+}
+
+a {
+  text-decoration: none;
+  color: #323131;
+}
+
+.role-row, .company-name-row {
+  font-variant: small-caps;
+  margin-top: -15px;
+}
+
+.role-row {
+  color: #7DE19A;
+}
+
+.duration-row  {
+  margin-top: -15px;
+  margin-bottom: -10px;
+}
+
+.experience-card {
+  margin-top: 10px;
 }
 

@@ -15,6 +15,7 @@ import { SideNavigationComponent } from './components/side-navigation/side-navig
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BlogComponent } from './components/blog/blog.component';
     ContactComponent,
     HomeComponent,
     BlogComponent,
+    FooterComponent,
 
   ],
   imports: [

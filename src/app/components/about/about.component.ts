@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { latestBlogsList, skillsSet, workExperienceList } from 'src/app/shared/resources/about-content-list';
 
 @Component({
   selector: 'app-about',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+
+  skillsSetList :any = skillsSet;
+  latestBlogsDetailList : any = latestBlogsList;
+  experienceList: any = workExperienceList;
 
   constructor() { }
 

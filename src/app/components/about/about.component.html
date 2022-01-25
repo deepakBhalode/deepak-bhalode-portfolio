@@ -1,4 +1,97 @@
 <div class="grid-container">
   <h1 class="mat-h1">About Me</h1>
 
+  <!-- summary section -->
+  <h1 class="section-title"><span class="title-prefix">|</span> Summary</h1>
+  <div class="brief-info">
+    <h3><i>"A developer who codes for food and loves to teach"</i></h3>
+    <p>
+      I am a Software Developer with more than 1 year of hands-on experience in designing, developing,
+      and implementing solutions using a range of technologies. Currently, exploring and contributing
+      to the world of microservices as an Associate Software Engineer at Impetus using Java.
+      <br><br>
+      I started my professional journey in 2021 in a startup where I worked as a part of a 5-member
+      team to release and update 2 .NET applications for the company clients in pharmaceutical and
+      manufacturing niches. I also ensured the fulfillment of business data-extraction requirements by
+      developing custom reports and building database objects (stored procedures, functions, and views)
+      to support responsive data access. Since this moment, I am climbing the ladder step by step.
+      <br><br>
+      Want to know how I may help your project and what I can offer ? Check out my
+      <a class="resume-link" href="#">resume</a>.
+    </p>
+  </div>
+  <mat-divider style="margin-bottom: 25px;"></mat-divider>
+
+  <!-- experience section -->
+  <div style="margin-top: 25px;">
+    <h1 class="section-title"><span class="title-prefix">|</span> Work Experience</h1>
+    <div class="card experience-card" *ngFor="let experience of experienceList">
+      <div class="card-body">
+        <h2 class="role-row">
+          <span>- </span>{{experience.role}}</h2>
+        <h2 class="company-name-row">{{experience.companyName}}</h2>
+        <h3 class="duration-row">{{experience.from}} - {{experience.to}}</h3>
+      </div>
+    </div>
+  </div>
+  <mat-divider style="margin-top: 25px;"></mat-divider>
+
+  <!-- skills overview section -->
+  <div style="margin-top: 25px;">
+    <h1 class="section-title"><span class="title-prefix">|</span> Skills Overview</h1>
+    <div class="brief-info">
+      <p style="margin-bottom: 10px;">
+        Below is a quick overview of my technical skills.
+        This is what I have used and added to my tech bucket.
+      </p>
+    </div>
+    <div class="container">
+      <div class="card-deck">
+        <div class="card"  *ngFor="let skill of skillsSetList">
+          <div class="card-header">{{skill.title}}</div>
+          <div class="card-body">
+            <ul>
+              <li *ngFor="let technology of skill.technologies">
+                <h4><span class="material-icons verified-icon">verified</span>{{technology}}</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <mat-divider style="margin-top: 25px;"></mat-divider>
+
+  <!-- latest blogs section -->
+  <div style="margin-top: 25px;">
+    <h1 class="section-title"><span class="title-prefix">|</span> Latest Blogs</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="card-deck">
+              <div class="card mb-3 card-dimension" *ngFor="let blogDetail of latestBlogsDetailList">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img class="card-img"
+                    src="https://assets.codepen.io/6093409/mountains-3.jpg"/>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="blog-title">{{blogDetail.title}}</h5>
+                      <p class="card-text">{{blogDetail.description}}</p>
+                      <button><a href={{blogDetail.link}}>read more</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <mat-divider style="margin-top: 25px;"></mat-divider>
+
 </div>
+<app-footer></app-footer>
