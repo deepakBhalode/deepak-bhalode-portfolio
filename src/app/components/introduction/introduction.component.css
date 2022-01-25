@@ -1,0 +1,107 @@
+.grid-container {
+  padding: 30px;
+}
+
+.name-role-info {
+  margin-top: 15vh;
+  text-align: center;
+}
+
+
+.name-row {
+  font-weight: bold;
+  font-size: 50px;
+  color: #7DE19A;
+  margin-top: 25px;
+}
+
+.role-row {
+  font-size: 25px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+/* ------------------ button styling  ------------------ */
+.about-resume-row {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 20px;
+  height: 40px;
+  width: 130px;
+  font-size: 16px;
+  font-weight: bold;
+  border-color: white;
+}
+
+button:hover {
+  background: #7DE19A;
+}
+
+.about-btn {
+  background: #7DE19A;
+  color: #1e1e21;
+  border-color: white;
+}
+
+.about-btn:hover {
+  background:white;
+}
+
+.resume-btn {
+  margin-left: 10px;
+  border-color: #7DE19A;
+}
+
+.about-resume-link {
+  text-decoration: none;
+  color: #1e1e21;
+}
+
+/* ------------------ handling responsiveness  ------------------ */
+@media only screen and (min-width: 600px) {
+  .profile-pic-info {
+    display: none;
+  }
+
+  /* ------------------ button styling  ------------------ */
+  button:hover {
+    background: #7DE19A;
+  }
+
+  .about-btn:hover {
+    background:white;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .name-role-info {
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+  .name-row {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .profile-pic-info {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile-pic{
+    background-image: url('~src/assets/images/profilePicAvatar.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+  }
+
+}
