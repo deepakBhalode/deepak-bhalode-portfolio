@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { latestBlogsList } from 'src/app/shared/resources/about-content-list';
+import { blogsList } from 'src/app/shared/resources/blogs-list';
 
 @Component({
   selector: 'app-blog',
@@ -8,7 +8,7 @@ import { latestBlogsList } from 'src/app/shared/resources/about-content-list';
 })
 export class BlogComponent implements OnInit {
 
-  latestBlogsDetailList : any = latestBlogsList;
+  latestBlogsDetailList : any = blogsList;
 
   constructor() { }
 
